@@ -1,0 +1,81 @@
+body{
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+.square {
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 30%;
+	transition: background 0.6s; /*fade effect when any property CHANGES (button:hover) and for how long in secs*/
+	-webkit-transition: background 0.6s; /*browser freindly*/
+	-moz-transition: background 0.6s; /*browser freindly*/
+}
+#container {
+	margin: 20px auto; /*for centering*/
+/*	auto; 0 margin on top and bottom, 
+	auto on left and right will make it same 
+	size on either side.*/
+	max-width: 600px;
+}
+
+h1{
+	text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+	color: white;
+	background: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+#colorDisplay{
+	font-size: 200% /*of the h1 font-size*/
+}
+
+#message{
+	display: inline-block; /*span will take up the entire space*/
+	width: 20%;
+}
+#stripe{
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px
+	font-size: inherit;
+	transition: all .3s; /*fade effect when any property CHANGES (button:hover) and for how long in secs*/
+	-webkit-transition: all 0.3s; /*browser freindly*/
+	-moz-transition: all 0.3s; /*browser freindly*/
+	outline: none; /*remove obnoxious line around the button during transition*/
+}
+
+button:hover{ /*change coller when hovered over*/
+	color: white;
+	background: steelblue;
+}
+
+div a {
+	color: white;
+	margin: 20px auto; 
+	display: inline-block;
+}
